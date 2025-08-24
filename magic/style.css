@@ -1,0 +1,84 @@
+body {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 
+      1px 1px 0px #ff00de,
+      2px 2px 0px #ff00de,
+      3px 3px 0px #00eaff,
+      4px 4px 10px #00eaff,
+      0 0 20px #ff00de,
+      0 0 40px #00eaff,
+      0 0 80px #ff00de;
+  animation: neon3D 3s infinite alternate;
+}
+
+@keyframes neon3D {
+  0% {
+    text-shadow: 
+      1px 1px 0px #ff00de,
+      2px 2px 0px #ff00de,
+      3px 3px 0px #00eaff,
+      4px 4px 10px #00eaff,
+      0 0 20px #ff00de,
+      0 0 40px #00eaff,
+      0 0 80px #ff00de;
+    color: #fff;
+  }
+  50% {
+    text-shadow: 
+      1px 1px 0px #00eaff,
+      2px 2px 0px #00eaff,
+      3px 3px 0px #ff00de,
+      4px 4px 15px #ff00de,
+      0 0 30px #00eaff,
+      0 0 60px #ff00de,
+      0 0 120px #00eaff;
+    color: #0ff;
+  }
+  100% {
+    text-shadow: 
+      1px 1px 0px #0f0,
+      2px 2px 0px #0f0,
+      3px 3px 0px #ff0,
+      4px 4px 20px #ff0,
+      0 0 40px #0f0,
+      0 0 80px #ff0,
+      0 0 160px #0f0;
+    color: #ff0;
+  }
+}
+
+p {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #ccc;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #ff00de;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0, 0 0 40px #0f0;
+  }
+}
